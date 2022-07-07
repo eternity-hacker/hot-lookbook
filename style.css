@@ -9,8 +9,74 @@
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   min-height: 90px;
   height: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 57, 29, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.brand-container {
+  display: flex;
+  width: 300px;
+  height: 100%;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.brand-flex-item {
+  height: 64px;
+}
+
+h1.brand-flex-item {
+  margin-top: 20px;
+}
+
+h1.brand-flex-item span {
+  display: inline-block;
+  font-size: 40px;
+  transform: skewX(10deg);
+}
+
+.navigation-container menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+
+  list-style: none;
+}
+
+/* Login list item */
+.navigation-container menu li:nth-child(1) {
+  /* Login Haute Closet item */
+  list-style: url("images/identity.png");
+  transform: scale(0.5);
+
+  font-size: 3em;
+}
+
+/*Haute Closet list item */
+.navigation-container menu li:nth-child(2) {
+  list-style: url("images/fire.png");
+
+  transform: scale(0.5);
+  font-size: 3em;
+}
+
+/*Search list item */
+.navigation-container menu li:nth-child(3) {
+  list-style: url("images/search.png");
+
+  transform: scale(0.5);
+  font-size: 3em;
 }
 
 main {
