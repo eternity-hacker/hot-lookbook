@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
+/*initial value is none but will be manipulated by js later*/
 #search-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 1;
