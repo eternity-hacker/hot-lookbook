@@ -54,6 +54,11 @@ h1.brand-flex-item span {
   list-style: none;
 }
 
+.navigation-container menu li:hover {
+  cursor: pointer;
+  color: rgb(63, 29, 253);
+}
+
 /* Login list item */
 .navigation-container menu li:nth-child(1) {
   /* Login Haute Closet item */
