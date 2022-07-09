@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* targeting all img elements that are the same. called global element rules*/
+img {
+  width: 100%;
+}
+
 /*initial value is none but will be manipulated by js later*/
 #search-container {
   display: none;
@@ -132,7 +137,24 @@ h1.brand-flex-item span {
 }
 
 main {
+  display: flex;
   height: 75%;
+}
+
+main #topics-container {
+  width: 30%;
+}
+
+main #lip-container {
+  width: 50%;
+}
+
+#lip-container h2 {
+  text-align: center;
+}
+
+main #navigation-column {
+  width: 20%;
 }
 
 footer {
