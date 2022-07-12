@@ -9,6 +9,14 @@ img {
   width: 100%;
 }
 
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1px;
+  color: transparent;
+}
+
 /*initial value is none but will be manipulated by js later*/
 #search-container {
   display: none;
@@ -68,9 +76,15 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  align-content: center;
+
+  position: relative;
+
   min-height: 90px;
   height: 10%;
   background: linear-gradient(90deg, #fd391d 0%, rgba(252, 176, 69, 1) 100%);
+  border-bottom: 2px solid rgb(35, 35, 35);
+  box-shadow: 2px 3px 5px black;
 }
 
 .brand-container {
@@ -139,10 +153,15 @@ h1.brand-flex-item span {
 main {
   display: flex;
   height: 75%;
+  background: linear-gradient(90deg, #fd391d 0%, rgba(252, 176, 69, 1) 100%);
 }
 
 main #topics-container {
   width: 30%;
+}
+
+.makeup-brush-left {
+  transform: rotate(90deg);
 }
 
 main #lip-container {
@@ -151,6 +170,21 @@ main #lip-container {
 
 #lip-container h2 {
   text-align: center;
+}
+
+#lip-container img {
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+
+  mix-blend-mode: luminosity;
 }
 
 main #navigation-column {
