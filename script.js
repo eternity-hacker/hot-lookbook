@@ -1,3 +1,4 @@
+//
 const searchLink = document.querySelector(".search-link");
 const searchContainer = document.querySelector("#search-container");
 const exitLink = document.querySelector(".exit-container");

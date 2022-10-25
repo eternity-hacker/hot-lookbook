@@ -153,11 +153,11 @@ h1.brand-flex-item span {
 main {
   display: flex;
   height: 75%;
-  background: linear-gradient(90deg, #fd391d 0%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(0deg, #fd391d 0%, rgba(252, 176, 69, 1) 100%);
 }
 
 main #topics-container {
-  width: 30%;
+  max-width: 300px;
 }
 
 .makeup-brush-left {
@@ -166,13 +166,14 @@ main #topics-container {
 
 main #lip-container {
   width: 50%;
+  background: no repeat center/80% url("./images/main/lip.jpg") center;
 }
 
 #lip-container h2 {
   text-align: center;
 }
 
-#lip-container img {
+/* #lip-container img {
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -185,10 +186,10 @@ main #lip-container {
   );
 
   mix-blend-mode: luminosity;
-}
+} */
 
 main #navigation-column {
-  width: 20%;
+  max-width: 300px;
 }
 
 footer {
